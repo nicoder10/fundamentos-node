@@ -1,9 +1,16 @@
+const fs = require('fs');
+
 const tablaDelCinco = () => {
     let producto = 0;
+    let texto = '';
     for(let i = 1; i <= 10; i++) {
         producto = 5 * i;
-        console.log(`5 x ${i} = ${producto}`);
+        texto += `5 x ${i} = ${producto}\n`;
     }
+    fs.writeFile('tabla-5.txt', texto, (err) => {
+        if(err) console.log('No se pudo crear archivo!');
+        else console.log('Creado!');
+    })
 }
 
 tablaDelCinco();
