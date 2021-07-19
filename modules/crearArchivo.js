@@ -8,10 +8,11 @@ const crearArchivo = (base) => {
             producto = base * i;
             texto += `${base} x ${i} = ${producto}\n`;
         }
-        console.log(texto);
+        console.log(`<----- TABLA DEL ${base} ----->\n`.bold);
+        console.log(texto.rainbow);
         fs.writeFile(`tabla-${base}.txt`, texto, (err) => {
-            if(err) reject('No se pudo crear archivo!');
-            else resolve('Creado!');
+            if(err) reject('No se pudo crear archivo!'.red);
+            else resolve('Creado!'.green);
         })
     })
 }

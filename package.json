@@ -1,0 +1,22 @@
+{
+  "name": "fundamentos-node",
+  "version": "1.0.0",
+  "description": "Basic excercise to install npm packages",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicoder10/fundamentos-node.git"
+  },
+  "author": "Nicolas Martino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicoder10/fundamentos-node/issues"
+  },
+  "homepage": "https://github.com/nicoder10/fundamentos-node#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}

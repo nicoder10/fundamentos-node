@@ -1,4 +1,5 @@
 const tabla = require('./modules/crearArchivo');
+const colors = require('colors');
 
 let argv = process.argv;
 let valor = argv[2].split('=')[1];
