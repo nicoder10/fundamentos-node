@@ -1,10 +1,10 @@
 const tabla = require('./modules/crearArchivo');
 const colors = require('colors');
+const yargs = require('yargs');
 
-let argv = process.argv;
-let valor = argv[2].split('=')[1];
 
-let base = valor;
+let argv = yargs.argv;
+let base = argv.base;
 
 tabla.crearArchivo(base)
     .then(message => console.log(message))
