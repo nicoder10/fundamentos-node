@@ -8,7 +8,7 @@ const crearArchivo = (base, list) => {
             producto = base * i;
             texto += `${base} x ${i} = ${producto}\n`;
         }
-        if(list) {
+        if(list === true) {
             console.log(`<----- TABLA DEL ${base} ----->\n`.bold)
             console.log(texto.rainbow)
         }
