@@ -1,11 +1,9 @@
 const tabla = require('./modules/crearArchivo');
-const colors = require('colors');
-const argv = require('./config/yargs.js');
+const argv = require('./config/yargs');
 
-let base = argv.argv.base;
-let list = argv.argv.l;
+const { base } = argv.argv;
+const list = argv.argv.l;
 
 tabla.crearArchivo(base, list)
-    .then(message => console.log(message))
-    .catch(error => console.log(error));
-
+  .then((message) => console.log(message))
+  .catch((error) => console.log(error));
